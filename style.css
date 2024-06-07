@@ -1,3 +1,48 @@
 *{
     font-family: "Poppins", sans-serif;
+    
+}
+.pricing-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 100vh;
+    
+}
+.pricing-plans{
+    background-color: rgb(158, 156, 156);
+    flex: 1;
+    max-width: 300px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    text-align: left;
+}
+.pricing-features li{
+    list-style: none;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    
+}
+.pricing-title,.pricing-price,.pricing-btn{
+    text-align: center;
+}
+.pricing-title,.pricing-price{
+    font-weight: 600;
+    font-size: 2rem;
+}
+.pricing-btn button{
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    padding-inline: 10px;
+    background-color: orange;
+}
+
+@media(max-width:1119px) {
+    .pricing-container{
+        flex-direction: column;
+        height: auto;
+    }
 }
